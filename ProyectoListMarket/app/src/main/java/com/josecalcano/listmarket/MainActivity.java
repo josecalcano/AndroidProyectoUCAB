@@ -22,9 +22,5 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void launchProductsActivity(View view) {
 
-        Intent intent = new Intent(this, ProdutcsActivity.class);
-        startActivity (intent);
-    }
 }
