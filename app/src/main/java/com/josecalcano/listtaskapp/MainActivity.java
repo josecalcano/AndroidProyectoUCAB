@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements ListaTareas{
         listatareas = daoTareas.ConsultarTareas();
         adapterRecycler.notifyDataSetChanged();
 
-        Toast.makeText(getApplicationContext(),"hi",Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),"Tarea completada",Toast.LENGTH_SHORT).show();
     }
 
     @Override
