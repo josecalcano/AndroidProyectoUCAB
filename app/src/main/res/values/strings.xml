@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ListTaskApp</string>
+    <string name="textview_name">Nombre de la tarea</string>
+    <string name="created_date">Created Date</string>
+    <string name="is_complete">Is Complete</string>
+    <string name="nombre">Nombre</string>
+    <string name="agregar_tarea">Agregar tarea</string>
+    <string name="fecha">fecha</string>
+    <string name="complete">Complete</string>
+    <string name="nombre_de_tarea">nombre de tarea</string>
 </resources>

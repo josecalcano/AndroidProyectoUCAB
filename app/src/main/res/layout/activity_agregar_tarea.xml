@@ -12,18 +12,18 @@
         android:id="@+id/tvnombretarea"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="17sp"
-        android:text="Nombre de la tarea"
-        android:layout_marginTop="8dp"
+        android:textSize="@dimen/size"
+        android:text="@string/textview_name"
+        android:layout_marginTop="@dimen/margintop"
 
         />
     <TextView
         android:id="@+id/tvfechatarea"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Created Date"
-        android:textSize="17sp"
-        android:layout_marginTop="12dp"
+        android:text="@string/created_date"
+        android:textSize="@dimen/size"
+        android:layout_marginTop="@dimen/margintop"
         android:layout_below="@id/tvnombretarea"
         />
 
@@ -31,20 +31,20 @@
         android:id="@+id/completetarea"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Is Complete"
-        android:textSize="17sp"
-        android:layout_marginTop="12dp"
+        android:text="@string/is_complete"
+        android:textSize="@dimen/size"
+        android:layout_marginTop="@dimen/margintop"
         android:layout_below="@id/tvfechatarea"
         />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Nombre"
+        android:hint="@string/nombre"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="55dp"
+        android:layout_marginRight="@dimen/margin_right_edittext"
         android:id="@+id/etnombre"
-        android:textSize="15sp"
+        android:textSize="@dimen/size"
         android:layout_alignBaseline="@id/tvnombretarea"
         />
 
@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
         android:hint="Nombre"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="15dp"
+        android:layout_marginRight="@dimen/margin_roght2"
         android:id="@+id/etfecha"
         android:layout_below="@id/etnombre"
         android:layout_alignStart="@id/etnombre"
@@ -66,7 +66,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/etfecha"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="75dp"
+        android:layout_marginRight="@dimen/margin_right"
         android:layout_alignBaseline="@id/completetarea"
         android:id="@+id/checkbox2"
         />
@@ -75,9 +75,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/checkbox2"
-        android:text="Agregar tarea"
+        android:text="@string/agregar_tarea"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/top"
         android:id="@+id/button"
         />
 

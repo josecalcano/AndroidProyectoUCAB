@@ -8,20 +8,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/TVnameTask"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="10dp"
-        android:textSize="20sp"
-        android:hint="nombre de tarea"
+        android:layout_marginTop="@dimen/mtop"
+        android:layout_marginStart="@dimen/mstart"
+        android:textSize="@dimen/size"
+        android:hint="@string/nombre_de_tarea"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/TVDateTask"
         android:layout_below="@+id/TVnameTask"
-        android:layout_marginTop="5dp"
-        android:layout_marginStart="10dp"
-        android:hint="fecha"
-        android:textSize="17sp"
+        android:layout_marginTop="@dimen/margintoptext"
+        android:layout_marginStart="@dimen/margin_start"
+        android:hint="@string/fecha"
+        android:textSize="@dimen/size"
         />
 
     <CheckBox
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
-        android:layout_marginEnd="18dp"
-        android:text="Complete" />
+        android:layout_marginEnd="@dimen/marginend"
+        android:text="@string/complete" />
 
 </RelativeLayout>
