@@ -5,7 +5,8 @@ import java.util.Date;
 import io.realm.Realm;
 import io.realm.RealmObject;
 
-public class Tareas extends RealmObject{
+public class Tareas extends RealmObject {
+
     private Date fechacreacion;
     private Date fechafinalizacion;
     private String nombre;
@@ -43,3 +44,4 @@ public class Tareas extends RealmObject{
         this.completa = completa;
     }
 }
+

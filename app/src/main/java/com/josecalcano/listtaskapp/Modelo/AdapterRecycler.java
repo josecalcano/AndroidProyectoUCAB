@@ -9,13 +9,14 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 
 import com.josecalcano.listtaskapp.ListaTareas;
+import com.josecalcano.listtaskapp.R;
 
 import java.text.SimpleDateFormat;
 
 import io.realm.Realm;
 import io.realm.RealmResults;
 
-public class AdapterRecycler extends RecyclerView.Adapter<AdapterRecycler.ViewHolder>  {
+public class AdapterRecycler extends RecyclerView.Adapter<AdapterRecycler.ViewHolder> {
 
     RealmResults<Tareas> tareas;
     ListaTareas listaTareas;
@@ -28,9 +29,8 @@ public class AdapterRecycler extends RecyclerView.Adapter<AdapterRecycler.ViewHo
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-      //  View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_recycler_alltasks,parent,false);
-       // return new ViewHolder(v);
-        return null;
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_recycler_alltasks,parent,false);
+        return new ViewHolder(v);
     }
 
     @Override
@@ -53,9 +53,9 @@ public class AdapterRecycler extends RecyclerView.Adapter<AdapterRecycler.ViewHo
         public ViewHolder(View itemView) {
             super(itemView);
             d = new SimpleDateFormat("dd-MM-yy");
-           // tvNombre = itemView.findViewById(R.id.TVnameTask);
-            //tvDate = itemView.findViewById(R.id.TVDateTask);
-            //checkBox = itemView.findViewById(R.id.checkBox);
+            tvNombre = itemView.findViewById(R.id.TVnameTask);
+            tvDate = itemView.findViewById(R.id.TVDateTask);
+            checkBox = itemView.findViewById(R.id.checkBox);
             ;
             checkBox.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -85,3 +85,4 @@ public class AdapterRecycler extends RecyclerView.Adapter<AdapterRecycler.ViewHo
         }
     }
 }
+

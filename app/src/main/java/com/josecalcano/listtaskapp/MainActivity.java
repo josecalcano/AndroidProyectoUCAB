@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements ListaTareas{
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
 
-        myToolbar.setTitle("Proyecto2");
+        myToolbar.setTitle("ListTaskApp");
         myToolbar.inflateMenu(R.menu.menu);
 
         config = new RealmConfiguration.Builder().deleteRealmIfMigrationNeeded().build();
