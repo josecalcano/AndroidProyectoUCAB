@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarTareaActivity">
+
+
+
+    <TextView
+        android:id="@+id/tvnombretarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="Nombre de la tarea"
+        android:layout_marginTop="8dp"
+
+        />
+    <TextView
+        android:id="@+id/tvfechatarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Created Date"
+        android:textSize="17sp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/tvnombretarea"
+        />
+
+    <TextView
+        android:id="@+id/completetarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Is Complete"
+        android:textSize="17sp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/tvfechatarea"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="55dp"
+        android:id="@+id/etnombre"
+        android:textSize="15sp"
+        android:layout_alignBaseline="@id/tvnombretarea"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:id="@+id/etfecha"
+        android:layout_below="@id/etnombre"
+        android:layout_alignStart="@id/etnombre"
+        android:layout_alignBaseline="@id/tvfechatarea"
+        />
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etfecha"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="75dp"
+        android:layout_alignBaseline="@id/completetarea"
+        android:id="@+id/checkbox2"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkbox2"
+        android:text="Agregar tarea"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/button"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>
